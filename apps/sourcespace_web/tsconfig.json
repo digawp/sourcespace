@@ -1,0 +1,7 @@
+{
+  target: "es5",
+  jsx: "react",
+  module: "commonjs",
+  emitDecoratorMetadata: true,
+  experimentalDecorators: true
+}
