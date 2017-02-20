@@ -21,15 +21,15 @@ To run SourceSpace in your local machine, you will need.
 
 3. Install dependencies and setup databases
 
-	$ mix deps.get
-	$ mix do ecto.create, ecto.migrate
+		$ mix deps.get
+		$ mix do ecto.create, ecto.migrate
 
-	# Install Static Assets
-	$ cd apps/sourcespace_web && npm install
+		# Install Static Assets
+		$ cd apps/sourcespace_web && npm install
 
-	# Start the server
-	$ mix phoenix.server
-	$ open localhost:4000
+		# Start the server
+		$ mix phoenix.server
+		$ open localhost:4000
 
 4. To run test for all umbrella applications at once, do `mix test`
 
