@@ -1,4 +1,5 @@
 # SourceSpace
+[![Build Status](https://travis-ci.org/srcspace/sourcespace.svg?branch=master)](https://travis-ci.org/srcspace/sourcespace)
 
 SourceSpace is a platform to create interactive programming assignments.
 This app is an umbrella application, please go to corresponding application's README for more details.
@@ -21,7 +22,7 @@ To run SourceSpace in your local machine, you will need.
 3. Install dependencies and setup databases
 
 	$ mix deps.get
-	$ mix ecto.create
+	$ mix do ecto.create, ecto.migrate
 
 	# Install Static Assets
 	$ cd apps/sourcespace_web && npm install

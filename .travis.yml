@@ -13,4 +13,3 @@ notifications:
 
 before_script:
   - cp apps/sourcespace_web/config/travis_ci_test.exs apps/sourcespace_web/config/test.secret.exs
-  - mix do ecto.create, ecto.migrate
