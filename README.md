@@ -19,7 +19,7 @@ To run SourceSpace in your local machine, you will need.
 3. Install dependencies and setup databases
 
 	$ mix deps.get
-	$ mix ecto.setup
+	$ mix ecto.create
 
 	# Install Static Assets
 	$ cd apps/sourcespace_web && npm install
