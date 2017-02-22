@@ -1,0 +1,14 @@
+<nav class="pt-navbar pt-fixed-top">
+  <div class="pt-navbar-group pt-align-left">
+    <div class="pt-navbar-heading">SourceSpace</div>
+  </div>
+  <div class="pt-navbar-group pt-align-right">
+    <%= if @current_user do %>
+      <%= link @current_user.name, to: user_path(@conn, :edit, @current_user.id) %>
+      <%= link "(sign out)", to: auth_path(@conn, :logout) %>
+    <% else %>
+      <%= link "Login", to: auth_path(@conn, :login), class: "pt-button pt-minimal" %>
+      <%= link "Sign Up", to: user_path(@conn, :new), class: "pt-button pt-minimal" %>
+    <% end %>
+  </div>
+</nav>

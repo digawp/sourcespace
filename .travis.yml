@@ -12,4 +12,4 @@ notifications:
   email: false
 
 before_script:
-  - cp apps/sourcespace_web/config/travis_ci_test.exs apps/sourcespace_web/config/test.secret.exs
+  - psql -c 'create database travis_ci_test;' -U postgres

@@ -17,7 +17,7 @@ To run SourceSpace in your local machine, you will need.
 
 1. Clone this repository
 
-2. Create database `sourcespace_dev`
+2. Create database `sourcespace_web_dev`
 
 3. Install dependencies and setup databases
 

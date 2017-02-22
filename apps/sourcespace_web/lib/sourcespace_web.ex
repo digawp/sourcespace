@@ -10,6 +10,7 @@ defmodule SourceSpaceWeb do
     children = [
       # Start the Ecto repository
       supervisor(SourceSpaceWeb.Repo, []),
+
       # Start the endpoint when the application starts
       supervisor(SourceSpaceWeb.Endpoint, []),
       # Start your own worker by calling: SourceSpaceWeb.Worker.start_link(arg1, arg2, arg3)
