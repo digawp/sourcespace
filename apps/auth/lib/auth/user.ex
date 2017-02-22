@@ -1,7 +1,13 @@
 defmodule Auth.User do
+  @moduledoc """
+    The User entity contains basic user data such as name and e-mail.
+    A user can have many authorisations from different providers.
+  """
   use Ecto.Schema
   import Ecto.Changeset
   alias Auth.Repo
+
+  @type t :: %__MODULE__{}
 
   schema "users" do
     field :name, :string

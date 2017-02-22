@@ -1,13 +1,14 @@
 defmodule SourceSpaceWeb.UserController do
   use SourceSpaceWeb.Web, :controller
 
-  plug Guardian.Plug.EnsureAuthenticated, [handler: __MODULE__, typ: "access"] when (action in [:edit])
+  plug Guardian.Plug.EnsureAuthenticated,
+    [handler: __MODULE__, typ: "access"] when action in [:edit]
 
-  def new(conn, params, current_user, _claims) do
+  def new(conn, _params, current_user, _claims) do
     render conn, "new.html", current_user: current_user
   end
 
-  def edit(conn, params, current_user, _claims) do
+  def edit(conn, _params, current_user, _claims) do
     render conn, "edit.html", current_user: current_user
   end
 

@@ -7,4 +7,3 @@ config :auth, Auth.Repo,
   database: "sourcespace_web_dev",
   hostname: "localhost",
   pool_size: 10
-
