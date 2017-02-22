@@ -18,20 +18,18 @@ defmodule Auth.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [ mod: {Auth.Application, []},
-      applications: applications(Mix.env) ]
+    [mod: {Auth.Application, []},
+     applications: applications(Mix.env)]
   end
 
   def applications(_) do
-    [
-      :comeonin,
-      :ecto,
-      :postgrex,
-      :ueberauth,
-      :ueberauth_identity,
-      :guardian,
-      :logger
-    ]
+    [:comeonin,
+     :ecto,
+     :postgrex,
+     :ueberauth,
+     :ueberauth_identity,
+     :guardian,
+     :logger]
   end
 
   # Dependencies can be Hex packages:
@@ -54,7 +52,6 @@ defmodule Auth.Mixfile do
      {:guardian, "~> 0.14.2"},
      {:guardian_db, "~> 0.8.0"},
      {:comeonin, "~> 2.4"},
-     {:postgrex, "~> 0.13.1"}
-    ]
+     {:postgrex, "~> 0.13.1"}]
   end
 end

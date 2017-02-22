@@ -1,6 +1,13 @@
 defmodule Auth.Authorization do
+  @moduledoc """
+   The Authorization entity represents user authorisation means
+   from different providers. It keeps track of the token and expiry, as
+   well as hashed password for identity provider.
+  """
   use Ecto.Schema
   import Ecto.Changeset
+
+  @type t :: %__MODULE__{}
 
   schema "authorizations" do
     field :provider, :string

@@ -21,4 +21,3 @@ config :sourcespace_web, SourceSpaceWeb.Repo,
 if System.get_env("TRAVIS") != nil do
   import_config "travis_ci_test.exs"
 end
-

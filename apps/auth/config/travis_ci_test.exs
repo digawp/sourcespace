@@ -6,4 +6,4 @@ config :auth, Auth.Repo,
   password: "",
   database: "travis_ci_test",
   hostname: "localhost",
-  pool_size: Ecto.Adapters.SQL.Sandbox 
+  pool_size: Ecto.Adapters.SQL.Sandbox
