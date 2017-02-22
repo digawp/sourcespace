@@ -12,4 +12,8 @@ notifications:
   email: false
 
 before_script:
-  - cp apps/*/config/travis_ci_test.exs apps/*/config/test.secret.exs
+  - |
+    for app in $(ls apps);
+    do
+      cp apps/$app/config/travis_ci_test.exs apps/$app/config/test.secret.exs
+    done
