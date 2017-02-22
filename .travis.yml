@@ -13,5 +13,3 @@ notifications:
 
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
-  - cp apps/sourcespace_web/config/travis_ci_test.exs apps/sourcespace_web/config/test.secret.exs
-  - cp apps/auth/config/travis_ci_test.exs apps/auth/config/test.secret.exs

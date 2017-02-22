@@ -17,3 +17,8 @@ config :sourcespace_web, SourceSpaceWeb.Repo,
   database: "sourcespace_web_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+if System.get_env("TRAVIS") != nil do
+  import_config "travis_ci_test.exs"
+end
+
