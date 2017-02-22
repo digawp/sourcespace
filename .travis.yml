@@ -12,4 +12,4 @@ notifications:
   email: false
 
 before_script:
-  - cp apps/sourcespace_web/config/travis_ci_test.exs apps/sourcespace_web/config/test.secret.exs
+  - cp apps/*/config/travis_ci_test.exs apps/*/config/test.secret.exs
