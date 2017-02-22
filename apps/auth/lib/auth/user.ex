@@ -22,7 +22,7 @@ defmodule Auth.User do
 
   def registration_changeset(user, params \\ :empty) do
     user
-    |> cast(params, ~w(email password)a)
+    |> cast(params, ~w(email name)a)
     |> validate_required(@required_fields)
     |> validate_format(:email, ~r/.*@.*/)
   end

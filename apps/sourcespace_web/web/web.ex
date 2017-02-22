@@ -29,6 +29,7 @@ defmodule SourceSpaceWeb.Web do
   def controller do
     quote do
       use Phoenix.Controller, namespace: SourceSpaceWeb
+      use Guardian.Phoenix.Controller
 
       alias SourceSpaceWeb.Repo
       import Ecto

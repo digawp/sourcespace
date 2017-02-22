@@ -18,8 +18,20 @@ defmodule Auth.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger]]
+    [ mod: {Auth.Application, []},
+      applications: applications(Mix.env) ]
+  end
+
+  def applications(_) do
+    [
+      :comeonin,
+      :ecto,
+      :postgrex,
+      :ueberauth,
+      :ueberauth_identity,
+      :guardian,
+      :logger
+    ]
   end
 
   # Dependencies can be Hex packages:
