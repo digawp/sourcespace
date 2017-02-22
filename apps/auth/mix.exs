@@ -38,6 +38,7 @@ defmodule Auth.Mixfile do
   defp deps do
     [{:ecto, "~> 2.1"},
      {:ueberauth, "~> 0.4"},
+     {:ueberauth_identity, "~>0.2.3"},
      {:guardian, "~> 0.14.2"},
      {:guardian_db, "~> 0.8.0"},
      {:comeonin, "~> 2.4"},

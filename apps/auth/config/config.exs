@@ -22,7 +22,7 @@ config :auth, ecto_repos: [Auth.Repo]
 
 config :ueberauth, Ueberauth,
   providers: [
-    identity: { Auth.Strategy.Identity, [callback_methods: ["POST"]] }
+    identity: { Ueberauth.Strategy.Identity, [callback_methods: ["POST"]] }
   ]
 
 config :guardian, Guardian,
