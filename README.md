@@ -31,6 +31,8 @@ To run SourceSpace in your local machine, you will need.
 		$ mix phoenix.server
 		$ open localhost:4000
 
+    Note Windows users: follow the instructions [here](https://github.com/riverrun/comeonin/wiki/Requirements#windows) if you encounter issues with `Comeonin` when running `mix phoenix.server`.
+
 4. To run test for all umbrella applications at once, do `mix test`
 
 ## License
